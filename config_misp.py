@@ -1,6 +1,0 @@
-misp_url = ""
-misp_authkey = ""
-misp_verifycert = ""
-misp_return_format  = ""
-misp_searchable_types  = ""
-event_blacklist  = ""

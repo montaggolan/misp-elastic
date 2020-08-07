@@ -1,0 +1,25 @@
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match": {
+          "exa_category": "Web"
+        }
+      },
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-10h",
+            "lte": "now+8h"
+          }
+        }
+      },
+      "must": {
+        "bool": {
+          "should": [
+          ]
+        }
+      }
+    }
+  }
+}

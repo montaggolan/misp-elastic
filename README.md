@@ -1,3 +1,3 @@
-# misp-kibana
+# misp-elastic
 
-Check kibana for IoCs present in MISP.
+Check elastic instance for IoCs present in MISP.

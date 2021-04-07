@@ -46,7 +46,7 @@ log_whitelist=[
     {
         'logs':['bind-dns'],
         'field':'SourceIP:Port',
-        'values':['1,1,1,1'],
+        'values':['1.1.1.1'],
         'action':'log'
     }
 ]

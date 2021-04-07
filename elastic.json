@@ -1,0 +1,19 @@
+{
+  "query": {
+    "bool": {
+      "must": [{
+        "term": {
+          "web_domain.keyword": "example.com"
+          }
+        }, {
+        "range": {
+          "indexTime": {
+            "gt":"now-2h"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "timeout":"5m"
+}

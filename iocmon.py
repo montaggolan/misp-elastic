@@ -319,8 +319,9 @@ class IOCMONITOR():
             if trgtLog in item['logs']:
                 for field in hit.keys():
                     if field == item['field']:
-                        if hit[field] in item['values']:
-                            return True
+                        for v in item['values']:
+                            if v in hit[field]:
+                                return True
         return False
 
     def extractFieldValue(self, hit, fName, logSource):
